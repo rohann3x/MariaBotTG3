@@ -1,4 +1,4 @@
-#Kanged From @TroJanZheX
+#Kanged From @ajak4405
 import asyncio
 import re
 import ast
@@ -362,13 +362,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/TeleRoid_AutoFilterBot?startgroup=true')
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/urlprov2_bot?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search Here', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🕵 Go Inline', switch_inline_query='')
             ],[
-            InlineKeyboardButton('⭕ Support ⭕', url='t.me/TeleRoid14'),
-            InlineKeyboardButton('⭕ Updates ⭕', url='https://t.me/TeleRoidGroup')
+            InlineKeyboardButton('⭕ Support ⭕', url='t.me/movierequestgrouppro'),
+            InlineKeyboardButton('⭕ Updates ⭕', url='https://t.me/movierequestgrouppro')
             ],[
             InlineKeyboardButton('🆘 Help', callback_data='help'),
             InlineKeyboardButton('👥 About', callback_data='about')
@@ -400,10 +400,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('⭕ Updates ⭕', url='https://t.me/TeleRoidGroup'),
-            InlineKeyboardButton('⭕ Support ⭕', url='https://t.me/TeleRoid14')
+            InlineKeyboardButton('⭕ Updates ⭕', url='https://t.me/movierequestgrouppro'),
+            InlineKeyboardButton('⭕ Support ⭕', url='https://t.me/movierequestgrouppro')
             ],[
-            InlineKeyboardButton('🚸 Powered By', url='https://t.me/MoviesFlixers_DL'),
+            InlineKeyboardButton('🚸 Powered By', url='https://t.me/movierequestgrouppro'),
             InlineKeyboardButton('💢 Source', callback_data='source')
             ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
