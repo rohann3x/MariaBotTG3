@@ -8,7 +8,7 @@ from utils import get_size, temp
 from Script import script
 from pyrogram.errors import ChatAdminRequired
 
-"""-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
+"""-----------------------------------------https://t.me/movierequestgrouppro --------------------------------------"""
 
 @Client.on_message(filters.new_chat_members & filters.group)
 async def save_group(bot, message):
@@ -37,8 +37,8 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('🆘 Help', url=f"https://t.me/SamanthaMoviesBot?start=help"),
-            InlineKeyboardButton('Share Me ♂️', url='https://t.me/share/url?url=%F0%9F%99%8B%E2%80%8D%E2%99%82%20Hai%20Everyone%20%0A%0AToday%20I%20Just%20Found%20A%20Best%20Movies%20Search%20Bot.%20This%20Bot%20Can%20Search%20Telegram%20Movies%20Files%0A%0A%F0%9F%A4%96%20Bot%20Link%20%3A%20%40SamanthaMoviesBot%0A%0A%F0%9F%93%A5%20Bots%20Channel%20%3A%20%40TeleRoidGroup')
+            InlineKeyboardButton('🆘 Help', url=f"http://t.me/urlprov2_bot?start=help"),
+            InlineKeyboardButton('Share Me ♂️', url='https://t.me/share/url?url=%F0%9F%99%8B%E2%80%8D%E2%99%82%20Hai%20Everyone%20%0A%0AToday%20I%20Just%20Found%20A%20Best%20Movies%20Search%20Bot.%20This%20Bot%20Can%20Search%20Telegram%20Movies%20Files%0A%0A%F0%9F%A4%96%20Bot%20Link%20%3A%20%40SamanthaMoviesBot%0A%0A%F0%9F%93%A5%20Bots%20Channel%20%3A%20%40movierequestgrouppro')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
