@@ -19,17 +19,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/urlprov2_bot?startgroup=true')
+            InlineKeyboardButton('🔥 New Movies', url='https://t.me/MCAdda'),
             ],[
-            InlineKeyboardButton('🔍 Search Here', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🕵 Go Inline', switch_inline_query='')
+            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
+            InlineKeyboardButton('😾 admin ', url='https://t.me/MCAdda/7')
             ],[
-            InlineKeyboardButton('⭕ Join For Movies ⭕', url='https://t.me/movierequestgrouppro')
-            ],[
-            InlineKeyboardButton('🆘 Help', callback_data='help'),
-            InlineKeyboardButton('👥 About', callback_data='about')
-            ],[
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('⭐Rate 🙏 Me', url='https://t.me/MCAdda/6'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
