@@ -62,10 +62,11 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay"]:
         buttons = [[
-            InlineKeyboardButton('🔥 New Movies', url='https://t.me/MCAdda'),
+            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🔥 New Movies', url='https://t.me/MCAdda')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😾 admin ', url='https://t.me/MCAdda/7')
+            InlineKeyboardButton('😊 About', callback_data='about')
             ],[
             InlineKeyboardButton('⭐Rate 🙏 Me', url='https://t.me/MCAdda/6'),
         ]]
