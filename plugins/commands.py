@@ -61,17 +61,12 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay"]:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/urlprov2_bot?startgroup=true')
+            InlineKeyboardButton('🔥 New Movies', url='https://t.me/MCAdda'),
             ],[
-            InlineKeyboardButton('🔍 Search Here', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🕵 Go Inline', switch_inline_query='')
+            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
+            InlineKeyboardButton('😾 admin ', url='https://t.me/MCAdda/7')
             ],[
-            InlineKeyboardButton('⭕ Join For Movies ⭕', url='https://t.me/movierequestgrouppro')
-            ],[
-            InlineKeyboardButton('🆘 Help', callback_data='help'),
-            InlineKeyboardButton('👥 About', callback_data='about')
-            ],[
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('⭐Rate 🙏 Me', url='https://t.me/MCAdda/6'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
