@@ -21,7 +21,7 @@ from database.filters_mdb import(
 BUTTONS = {}
 
 
-@Client.on_message(filters.group & filters.text & filters.incoming)
+@Client.on_message(filters.text & filters.incoming)
 async def give_filter(client,message):
     group_id = message.chat.id
     name = message.text
@@ -362,18 +362,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/urlprov2_bot?startgroup=true')
+            InlineKeyboardButton('🔥 New Movies', url='https://t.me/MCAdda'),
             ],[
-            InlineKeyboardButton('🔍 Search Here', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🕵 Go Inline', switch_inline_query='')
+            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
+            InlineKeyboardButton('😾 admin ', url='https://t.me/MCAdda/7')
             ],[
-            InlineKeyboardButton('⭕ Support ⭕', url='t.me/movierequestgrouppro'),
-            InlineKeyboardButton('⭕ Updates ⭕', url='https://t.me/movierequestgrouppro')
-            ],[
-            InlineKeyboardButton('🆘 Help', callback_data='help'),
-            InlineKeyboardButton('👥 About', callback_data='about')
-            ],[
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('⭐Rate 🙏 Me', url='https://t.me/MCAdda/6'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
