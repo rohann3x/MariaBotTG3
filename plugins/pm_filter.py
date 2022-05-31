@@ -377,14 +377,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('🔆 Manual Filters', callback_data='manuelfilter'),
-            InlineKeyboardButton('🔅 Auto Filter', callback_data='autofilter')
+            InlineKeyboardButton('🆘Tutorial', callback_data='help'),
+            InlineKeyboardButton('👥GroupChat', url='https://t.me/McoffeeChat')
             ],[
-            InlineKeyboardButton('🔗 Connection', callback_data='coct'),
-            InlineKeyboardButton('🌀 Extra Mods', callback_data='extra')
+            InlineKeyboardButton('⚠️ Disclaimer ⚠️', callback_data='source'),
             ],[
-            InlineKeyboardButton('🏡 Home', callback_data='start'),
-            InlineKeyboardButton('📶 Status', callback_data='stats')
+            InlineKeyboardButton('🔙 Back', callback_data='start'),
+            InlineKeyboardButton('🔮 Status', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -394,14 +393,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('⭕ Updates ⭕', url='https://t.me/movierequestgrouppro'),
-            InlineKeyboardButton('⭕ Support ⭕', url='https://t.me/movierequestgrouppro')
+            InlineKeyboardButton('🆘Tutorial', callback_data='help'),
+            InlineKeyboardButton('👥GroupChat', url='https://t.me/McoffeeChat')
             ],[
-            InlineKeyboardButton('🚸 Powered By', url='https://t.me/movierequestgrouppro'),
-            InlineKeyboardButton('💢 Source', callback_data='source')
+            InlineKeyboardButton('⚠️ Disclaimer ⚠️', callback_data='source'),
             ],[
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('🔙 Back', callback_data='start'),
+            InlineKeyboardButton('🔮 Status', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
