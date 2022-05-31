@@ -1,27 +1,7 @@
 class script(object):
-    START_TXT = """Hello {} 👨‍💻,
-My Name is <a href='https://t.me/urlprov2_bot'>Miss Anjali Bot</a>
-I Can Provide Movies In Telegram Groups. You Can Search Movies Via Inline. I Can Also Add Filters In Telegram Groups.
-Just Add Me To Your Group And Enjoy Of All Available Movies On TG.
-Made With ❤ BY @movierequestgrouppro"""
-    HELP_TXT = """Hell'O {}
-Here is the Help For My Bot Commands."""
-    ABOUT_TXT = """☞ My Name: Miss Anjali
-☞ Developer: @movierequestgrouppro
-☞ Library: Pyrogram
-☞ Language: Python 3
-☞ DataBase: Mongo DB
-☞ Bot Server: Heroku
-☞ Build Status: v1.0.1 [Beta]
-☞ Updates:<a href='https://t.me/movierequestgrouppro'>@movierequestgrouppro</𝚊>
-☞ Support: <a href='https://t.me/movierequestgrouppro'> @movierequestgrouppro</𝚊>
-☞ BotsList" : <a href='https://t.me/movierequestgrouppro'> @movierequestgrouppro</𝚊>"""
-    SOURCE_TXT = """<b>NOTE:</b>
-- Eva Maria is a open source project. 
-- Source - https://github.com/amit4405/SamanthaMoviesRobot
-
-<b>DEVS:</b>
-- <a href=https://t.me/movierequestgrouppro>Miss Anjali</a>"""
+    START_TXT = """Hiii!! 🤪 🍿Welcome to the largest movies and series database on net!Inline Search DISABLED 🚫 Press Button ℹ️ help for Pm Search Tutorial"""
+    SOURCE_TXT = """<b>DISCLAIMER!! It is forbidden to download, stream, reproduce, or by any means, share, or consume, content without explicit permission from the content creator or legal copyright holder.. If you believe this bot is violating your intellectual property, contact the respective channels for removal. The Bot does not own any of these contents, it only index the files from telegram."""
+    HELP_TXT = """<a href=https://t.me/MCAdda>ℹ️ </b>Powered by MOVIE COFFEE</b></a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and tessa will respond whenever a keyword is found the message
